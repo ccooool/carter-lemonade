@@ -1,33 +1,52 @@
 {
-  "name": "carter-lemonade",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^4.4.1",
-    "react": "^16.12.0",
-    "react-bootstrap": "^1.0.0-beta.16",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
-  },
+  "name": "shopify-demo-app-node-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shopify/shopify-demo-app-node-react.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "Shopify",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shopify/shopify-demo-app-node-react/issues"
+  },
+  "homepage": "https://github.com/Shopify/shopify-demo-app-node-react#readme",
+  "dependencies": {
+    "@shopify/app-bridge": "^1.11.1",
+    "@shopify/app-bridge-react": "^1.11.2",
+    "@shopify/koa-shopify-auth": "^3.1.51",
+    "@shopify/koa-shopify-graphql-proxy": "^3.2.3",
+    "@shopify/koa-shopify-webhooks": "^2.2.2",
+    "@shopify/polaris": "^4.8.0",
+    "@zeit/next-css": "^1.0.1",
+    "apollo-boost": "^0.4.1",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.5.7",
+    "graphql-tag": "^2.10.1",
+    "isomorphic-fetch": "^2.2.1",
+    "js-cookie": "^2.2.1",
+    "koa": "^2.11.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.12.3",
+    "next": "^8.1.0",
+    "ngrok": "^3.2.5",
+    "react": "^16.12.0",
+    "react-apollo": "^3.1.3",
+    "react-dom": "^16.12.0",
+    "store-js": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-shopify": "^27.0.1"
   }
 }
